@@ -1,19 +1,9 @@
-# :: 원티드 프리온보딩 챌린지 프론트엔드 코스 사전과제 안내 & API
+# :: 과제 진행 가이드 안내 & API
 
-# 1-1) 사전과제 진행 가이드
-
-- 제공해드리는 API Repository를 활용하여 가이드에 따라 `Todo App`을 작성, 본인의 github에 `Public`으로 올려주세요. (주의: Public이 아닐 경우 과제를 확인할 수 없습니다)
-- 완성한 과제는 모집 마감 후 설문 조사를 통해 제출해주세요. (개강 시 설문 조사 링크 전달 예정)
-- 제출 레파지토리 명은 `wanted-pre-onboarding-challenge-fe-1`로 생성해 주세요.
-- 과제 수행 개수에 따라 기본적인 평가가 이루어지며, 커리큘럼 운영 과정에서 최소한의 수준을 파악하기 위한 용도입니다.
-- 코드의 일관성, 가독성, 함수 분리, 컴포넌트 설계, 코드 퀄리티 등을 기준으로 세부적인 평가가 이루어집니다.
-- 해당 과제에 대한 해설은 개강 후 진행될 예정입니다.
-- `README.md`를 꼭 작성해 주세요. 본인에 대한 소개나 프로젝트 소개 등 자유롭게 작성해주시면 됩니다.
+- 제공해드리는 API Repository를 활용하여 가이드에 따라 `Todo App`을 작성, 본인의 github에 `Public`으로 올려주세요.
 - 반드시 함수 컴포넌트로 개발해주세요. (React Hooks)
 
-\* 문의 사항은 사전 과제 Repository의 Issue로 등록해 주세요.
-
-# 1-2) 클라이언트 구현 과제 안내
+# 1) 클라이언트 구현 과제 안내
 
 ## Assignment 1 - Login / SignUp
 
@@ -44,7 +34,7 @@
 
   - [ ] 수정되는 Todo의 내용이 목록에서도 실시간으로 반영되어야 합니다
 
-## 과제 참고 사항
+## 참고 사항
 
 1. 로컬 서버를 실행했을 때 생성되는 `db/db.json`이 DB 역할을 하게 됩니다. 해당 파일을 삭제하면 DB는 초기화 됩니다.
 
@@ -75,17 +65,19 @@
 - [login](#login)
 - [signUp](#signUp)
 
-# <span id="todos">1-3) Todos</span>
+# <span id="todos">2-3) Todos</span>
 
 ## getTodos
 
 ### URL
 
-- GET `/todos`
-- Headers
-  - Authorization: login token
+- GET `{endPoint}/todos`
+###header
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | Authorization | string |login token
 
-### 응답 예시
+### response
 
 ```json
 {
@@ -112,9 +104,12 @@
 
 ### URL
 
-- GET `/todos/:id`
-- Headers
-  - Authorization: login token
+- GET `{endPoint}/todos/:id`
+###header
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | Authorization | string |login token
+
 
 ### 응답 예시
 
@@ -130,18 +125,27 @@
 }
 ```
 
+
+
 ## createTodo
 
 ### URL
 
-- POST `/todos`
-- Parameter
-  - title: string
-  - content: string
-- Headers
-  - Authorization: login token
+- POST `{endPoint}/todos`
+###header
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | Authorization | string |login token
 
-### 응답 예시
+###body
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | title | string |
+2 | content | string |
+
+
+
+### response
 
 ```json
 {
@@ -159,14 +163,21 @@
 
 ### URL
 
-- PUT `/todos/:id`
-- Parameter
-  - title: string
-  - content: string
-- Headers
-  - Authorization: login token
+- PUT `{endPoint}/todos/:id`
 
-### 응답 예시
+###header
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | Authorization | string |login token
+
+###body
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | title | string |
+2 | content | string |
+
+
+### response
 
 ```json
 {
@@ -184,9 +195,12 @@
 
 ### URL
 
-- DELETE `/todos/:id`
-- Headers
-  - Authorization: login token
+- DELETE `{endPoint}/todos/:id`
+
+###header
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | Authorization | string |login token
 
 ### 응답 예시
 
@@ -196,18 +210,20 @@
 }
 ```
 
-# <span id="auth">1-4) Auth</span>
+# <span id="auth">2-4) Auth</span>
 
 ## login
 
 ### URL
 
-- POST `/users/login`
-- Parameter
-  - email: string
-  - password: string
+- POST `{endPoint}/users/login`
+###body
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | email | string |
+2 | password | string |
 
-### 응답 예시
+### response
 
 ```json
 {
@@ -220,12 +236,16 @@
 
 ### URL
 
-- POST `/users/create`
-- Parameter
-  - email: string
-  - password: string
+- POST `{endPoint}/users/create`
 
-### 응답 예시
+###body
+no |name | type | 비고 |
+--- |--- | --- |--- | 
+1 | email | string |
+2 | password | string |
+
+
+### Response
 
 ```json
 {
