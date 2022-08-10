@@ -77,6 +77,11 @@ no |name | type | 비고 |
 --- |--- | --- |--- | 
 1 | Authorization | string |login token
 
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | Authorization | string | login token|
+
+
 ### response
 
 ```json
