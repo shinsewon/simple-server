@@ -73,9 +73,6 @@
 
 - GET `{endPoint}/todos`
 ###header
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | Authorization | string |login token
 
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
@@ -112,8 +109,9 @@ no |name | type | 비고 |
 - GET `{endPoint}/todos/:id`
 ###header
 no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | Authorization | string |login token
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | Authorization | string | login token|
 
 
 ### 응답 예시
@@ -138,16 +136,15 @@ no |name | type | 비고 |
 
 - POST `{endPoint}/todos`
 ###header
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | Authorization | string |login token
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | Authorization | string | login token|
 
 ###body
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | title | string |
-2 | content | string |
-
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | title | string | |
+ |  2 | content | string | |
 
 
 ### response
@@ -171,15 +168,15 @@ no |name | type | 비고 |
 - PUT `{endPoint}/todos/:id`
 
 ###header
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | Authorization | string |login token
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | Authorization | string | login token|
 
 ###body
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | title | string |
-2 | content | string |
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | title | string | |
+ |  2 | content | string | |
 
 
 ### response
@@ -203,9 +200,9 @@ no |name | type | 비고 |
 - DELETE `{endPoint}/todos/:id`
 
 ###header
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | Authorization | string |login token
+| no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | Authorization | string | login token|
 
 ### 응답 예시
 
@@ -223,10 +220,10 @@ no |name | type | 비고 |
 
 - POST `{endPoint}/users/login`
 ###body
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | email | string |
-2 | password | string |
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | email | string | |
+ |  2 | password | string | |
 
 ### response
 
@@ -244,10 +241,10 @@ no |name | type | 비고 |
 - POST `{endPoint}/users/create`
 
 ###body
-no |name | type | 비고 |
---- |--- | --- |--- | 
-1 | email | string |
-2 | password | string |
+ | no | name | type | 비고 |
+ |:--:|:------|:-------------:|:--------|
+ |  1 | email | string | |
+ |  2 | password | string | |
 
 
 ### Response
