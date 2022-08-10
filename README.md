@@ -72,7 +72,8 @@
 ### URL
 
 - GET `{endPoint}/todos`
-###header
+
+### header
 
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
@@ -107,7 +108,8 @@
 ### URL
 
 - GET `{endPoint}/todos/:id`
-###header
+
+### header
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | Authorization | string | login token|
@@ -134,12 +136,12 @@
 ### URL
 
 - POST `{endPoint}/todos`
-###header
+### header
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | Authorization | string | login token|
 
-###body
+### body
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | title | string | |
@@ -166,12 +168,12 @@
 
 - PUT `{endPoint}/todos/:id`
 
-###header
+### header
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | Authorization | string | login token|
 
-###body
+### body
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | title | string | |
@@ -198,7 +200,7 @@
 
 - DELETE `{endPoint}/todos/:id`
 
-###header
+### header
 | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | Authorization | string | login token|
@@ -218,7 +220,7 @@
 ### URL
 
 - POST `{endPoint}/users/login`
-###body
+### body
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | email | string | |
@@ -239,7 +241,7 @@
 
 - POST `{endPoint}/users/create`
 
-###body
+### body
  | no | name | type | 비고 |
  |:--:|:------|:-------------:|:--------|
  |  1 | email | string | |
