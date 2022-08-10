@@ -205,7 +205,7 @@
  |:--:|:------|:-------------:|:--------|
  |  1 | Authorization | string | login token|
 
-### 응답 예시
+### response
 
 ```json
 {
@@ -248,7 +248,7 @@
  |  2 | password | string | |
 
 
-### Response
+### response
 
 ```json
 {
